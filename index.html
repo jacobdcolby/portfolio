@@ -64,10 +64,12 @@
                var dropdown = document.getElementById("mobile-links");
                var icon = document.getElementById("icon");
                if (window.innerWidth < 680) {
+                  dropdown.style.display = "none";
                   mobile.style.visibility = "visible";
                   mobile.style.opacity = "1";
                   mobile.style.display = "block";
                } else {
+                  dropdown.style.display = "none";
                   dropdown.style.visibility = "hidden";
                   dropdown.style.opacity = "0";
                   mobile.style.visibility = "hidden";
