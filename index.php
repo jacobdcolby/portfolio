@@ -1,3 +1,5 @@
+<?php
+echo '
 <!DOCTYPE html>
 <html lang="en">
    <head>
@@ -21,7 +23,7 @@
                dropdown.style.visibility = "visible";
                dropdown.style.opacity = "1";
             }
-            dropdown.addEventListener('click', function handleClick() {
+            dropdown.addEventListener(\'click\', function handleClick() {
                dropdown.style.visibility = "hidden";
                dropdown.style.opacity = "0";
             });
@@ -39,7 +41,7 @@
             }
          }
 
-         document.addEventListener('DOMContentLoaded', () => {
+         document.addEventListener(\'DOMContentLoaded\', () => {
             // Variables
             var mobile = document.getElementById("mobile-nav");
             var dropdown = document.getElementById("mobile-links");
@@ -48,11 +50,11 @@
 
             // Smooth Scrolling
             $(document).ready(function() {
-               $('a[href^="#"]').on('click', function(event) {
-                  var target = $(this.getAttribute('href'));
+               $(\'a[href^="#"]\').on(\'click\', function(event) {
+                  var target = $(this.getAttribute(\'href\'));
                   if( target.length ) {
                      event.preventDefault();
-                     $('html, body').stop().animate({
+                     $(\'html, body\').stop().animate({
                      scrollTop: target.offset().top - 80
                      }, 600);
                   }
@@ -112,9 +114,9 @@
    <body>
       <div class="body-wrapper">
          <section id="about">
-            <h1 #about>Hi, I'm Jacob Colby.</h1>
+            <h1 #about>Hi, I\'m Jacob Colby.</h1>
             <br>
-            <p>I'm a senior at Illinois State University studying <b style="color: #d2d2d2; font-weight: 500;">Game Design</b> (Creative Technologies). I chose to combine my passion for both graphic design and video games to create artwork that enhances the visual experience for players. My projects consist of work I've done in <span class="tag game-design">Game Design</span>, <span class="tag level-design">Level Design</span>, and <span class="tag graphic-design">Graphic Design</span>.</p>
+            <p>I\'m a senior at Illinois State University studying <b style="color: #d2d2d2; font-weight: 500;">Game Design</b> (Creative Technologies). I chose to combine my passion for both graphic design and video games to create artwork that enhances the visual experience for players. My projects consist of work I\'ve done in <span class="tag game-design">Game Design</span>, <span class="tag level-design">Level Design</span>, and <span class="tag graphic-design">Graphic Design</span>.</p>
             <a href="#project-gallery" class="down-arrow">&#8595</a>
          </section>
          <h1 class="h1-width" id="project-gallery">Projects</h1>
@@ -130,7 +132,7 @@
                   <img src="Assets/Projects/QuadMapProject/Final.JPG" alt="Project 1">
                   <div class="title-tags-container">
                      <div class="title-desc">
-                        <h3>Level of ISU's Quad</h3>
+                        <h3>Level of ISU\'s Quad</h3>
                         <p class="desc">Short description and details...</p>
                      </div>
                      <p class="tags"><span class="tag level-design">Procreate</span></p>
@@ -217,3 +219,5 @@
       </footer>
    </body>
 </html>
+';
+?>
