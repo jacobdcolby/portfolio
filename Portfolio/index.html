@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Jacob Colby | Game Asset Artist</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="Assets/Images/logo.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+      <script src="filters.js"></script>
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script>
+         // Mobile Menu
+         function hamburger() {
+            var dropdown = document.getElementById("mobile-links");
+            if (dropdown.style.visibility === "visible") {
+               dropdown.style.visibility = "hidden";
+               dropdown.style.opacity = "0";
+            } else {
+               dropdown.style.visibility = "visible";
+               dropdown.style.opacity = "1";
+            }
+            dropdown.addEventListener('click', function handleClick() {
+               dropdown.style.visibility = "hidden";
+               dropdown.style.opacity = "0";
+            });
+         }
+
+         function iconChange() {
+            var text = icon.textContent;
+            var dropdown = document.getElementById("mobile-links");
+            if (text === String.fromCharCode(8801)) {
+               icon.textContent = String.fromCharCode(215);
+               dropdown.style.display = "flex";
+            } else {
+               icon.textContent = String.fromCharCode(8801);
+               dropdown.style.display = "flex";
+            }
+         }
+
+         document.addEventListener('DOMContentLoaded', () => {
+            // Variables
+            var mobile = document.getElementById("mobile-nav");
+            var dropdown = document.getElementById("mobile-links");
+            var icon = document.getElementById("icon");
+            var text = icon.textContent;
+
+            // Smooth Scrolling
+            $(document).ready(function() {
+               $('a[href^="#"]').on('click', function(event) {
+                  var target = $(this.getAttribute('href'));
+                  if( target.length ) {
+                     event.preventDefault();
+                     $('html, body').stop().animate({
+                     scrollTop: target.offset().top - 80
+                     }, 600);
+                  }
+               });
+            });          
+            
+            window.addEventListener("resize", function() {
+               var mobile = document.getElementById("mobile-nav");
+               var dropdown = document.getElementById("mobile-links");
+               var icon = document.getElementById("icon");
+               if (window.innerWidth < 680) {
+                  dropdown.style.display = "flex";
+                  mobile.style.visibility = "visible";
+                  mobile.style.opacity = "1";
+                  mobile.style.display = "block";
+               } else {
+                  dropdown.style.display = "flex";
+                  dropdown.style.visibility = "hidden";
+                  dropdown.style.opacity = "0";
+                  mobile.style.visibility = "hidden";
+                  mobile.style.opacity = "0";
+                  mobile.style.display = "none";
+                  icon.textContent = String.fromCharCode(8801);
+               }
+            });
+         });
+      </script>
+   </head>
+   <nav>
+      <div class="navbar-container">
+         <div href="index.html" class="logo-container">
+            <a href="index.html">
+               <img class="logo-main" src="Assets/Images/logo.png">
+               <img class="logo-hover" src="Assets/Images/logo-blue.png">
+               <img class="logo-hover2" src="Assets/Images/logo-purple.png">
+            </a>
+         </div>
+         <ul class="desktop-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#project-gallery">Projects</a></li>
+            <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+         <div class="mobile-nav" id="mobile-nav">
+            <a href="javascript:void(0);" onclick="hamburger()">
+               <p onclick="iconChange()" id="icon">&#8801</p>
+            </a>
+         </div>
+      </div>
+   </nav>
+   <ul onclick="iconChange()" id="mobile-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#project-gallery">Projects</a></li>
+      <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+   </ul>
+   <body>
+      <div class="body-wrapper">
+         <section id="about">
+            <h1 #about>Hi, I'm Jacob Colby.</h1>
+            <br>
+            <p>I'm a senior at Illinois State University studying <b style="color: #d2d2d2; font-weight: 500;">Game Design</b> (Creative Technologies). I chose to combine my passion for both graphic design and video games to create artwork that enhances the visual experience for players. My projects consist of work I've done in <span class="tag game-design">Game Design</span>, <span class="tag level-design">Level Design</span>, and <span class="tag graphic-design">Graphic Design</span>.</p>
+            <a href="#project-gallery" class="down-arrow">&#8595</a>
+         </section>
+         <h1 class="h1-width" id="project-gallery">Projects</h1>
+         <div class="filter-view">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="game-design">Game Design</button>
+            <button class="filter-btn" data-filter="level-design">Level Design</button>
+            <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
+         </div>
+         <div class="project-container">
+            <div class="project" data-tag="graphic-design level-design">
+               <a href="proj1.html">
+                  <img src="Assets/Projects/QuadMapProject/Final.JPG" alt="Project 1">
+                  <div class="title-tags-container">
+                     <div class="title-desc">
+                        <h3>Level of ISU's Quad</h3>
+                        <p class="desc">Short description and details...</p>
+                     </div>
+                     <p class="tags"><span class="tag level-design">Procreate</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj2.html">
+                  <img src="Assets/Projects/PortalProject/Screenshot1.png" alt="Project 2">
+                  <div class="title-tags-container">
+                     <h3>Portal 2 Level Design</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag level-design">Valve Editor</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="game-design">
+               <a href="proj3.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 3">
+                  <div class="title-tags-container">
+                     <h3>Project 3</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj4.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 4">
+                  <div class="title-tags-container">
+                     <h3>Project 4</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj5.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 5">
+                  <div class="title-tags-container">
+                     <h3>Project 5</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj6.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 6">
+                  <div class="title-tags-container">
+                     <h3>Project 6</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj7.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 7">
+                  <div class="title-tags-container">
+                     <h3>Project 7</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+            <div class="project" data-tag="level-design">
+               <a href="proj8.html">
+                  <img src="Assets/Images/Project1.jpg" alt="Project 8">
+                  <div class="title-tags-container">
+                     <h3>Project 8</h3>
+                     <p class="desc">Short description and details of what the project entails. Two line maximum.</p>
+                     <p class="tags"><span class="tag">Test</span></p>
+                  </div>
+               </a>
+            </div>
+         </div>
+      </div>
+      <footer>
+         <p>&copy; 2023 Jacob Colby</p>
+         <li>
+            <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+         </li>
+      </footer>
+   </body>
+</html>
