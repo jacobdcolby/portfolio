@@ -360,7 +360,7 @@ section#about p {
 .project-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 1vw;
+	grid-gap: 15px;
 	padding: 60px 10vw;
 	margin: 0;
 	background-color: #151419;
