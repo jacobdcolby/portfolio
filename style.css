@@ -631,9 +631,9 @@ footer li {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	background-color: #0d0c0f;
+	background-color: #151419;
 	border-radius: 10px;
-	border: solid 1px #151419;
+	border: solid 1px #222129;
 }
 
 .text-box {
