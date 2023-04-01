@@ -50,40 +50,40 @@
          var icon = document.getElementById("icon");
          var text = icon.textContent;
 
-         // Smooth Scrolling
-         $(document).ready(function() {
-            $('a[href^="#"]').on('click', function(event) {
-               var target = $(this.getAttribute('href'));
-               if( target.length ) {
-                  event.preventDefault();
-                  $('html, body').stop().animate({
-                  scrollTop: target.offset().top - 80
-                  }, 600);
+            // Smooth Scrolling
+            $(document).ready(function() {
+               $('a[href^="#"]').on('click', function(event) {
+                  var target = $(this.getAttribute('href'));
+                  if( target.length ) {
+                     event.preventDefault();
+                     $('html, body').stop().animate({
+                     scrollTop: target.offset().top - 80
+                     }, 600);
+                  }
+               });
+            });          
+            
+            window.addEventListener("resize", function() {
+               var mobile = document.getElementById("mobile-nav");
+               var dropdown = document.getElementById("mobile-links");
+               var icon = document.getElementById("icon");
+               var body = document.getElementById("noscroll");
+               if (window.innerWidth < 680) {
+                  dropdown.style.display = "none";
+                  mobile.style.visibility = "visible";
+                  mobile.style.opacity = "1";
+                  mobile.style.display = "block";
+               } else {
+                  dropdown.style.display = "none";
+                  dropdown.style.visibility = "hidden";
+                  dropdown.style.opacity = "0";
+                  mobile.style.visibility = "hidden";
+                  mobile.style.opacity = "0";
+                  mobile.style.display = "none";
+                  icon.textContent = String.fromCharCode(8801);
                }
             });
-         });          
-            
-         window.addEventListener("resize", function() {
-            var mobile = document.getElementById("mobile-nav");
-            var dropdown = document.getElementById("mobile-links");
-            var icon = document.getElementById("icon");
-            var body = document.getElementById("noscroll");
-            if (window.innerWidth < 680) {
-               dropdown.style.display = "none";
-               mobile.style.visibility = "visible";
-               mobile.style.opacity = "1";
-               mobile.style.display = "block";
-            } else {
-               dropdown.style.display = "none";
-               dropdown.style.visibility = "hidden";
-               dropdown.style.opacity = "0";
-               mobile.style.visibility = "hidden";
-               mobile.style.opacity = "0";
-               mobile.style.display = "none";
-               icon.textContent = String.fromCharCode(8801);
-            }
          });
-      });
       </script>
    </head>
    <nav>
@@ -96,8 +96,8 @@
             </a>
          </div>
          <ul class="desktop-nav">
-            <li><a href="index.html">About</a></li>
-            <li><a href="index.html#project-gallery">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#project-gallery">Projects</a></li>
             <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
          </ul>
@@ -109,40 +109,24 @@
       </div>
    </nav>
    <ul onclick="iconChange()" id="mobile-links">
-      <li><a href="index.html">About</a></li>
-      <li><a href="index.html#project-gallery">Projects</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#project-gallery">Projects</a></li>
       <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
    </ul>
    <body id="noscroll">
       <div class="body-wrapper">
          <div class="tile">
-            <section>
-               <h1>Contact Me</h1>
-            </section>
-            <form 
-               name="contact"
-               action="success.html"
-               method="POST"
-               data-netlify="true"
-            >
-               <label for="name">Name:</label>
-               <input type="text" id="name" name="name" placeholder="John Doe" required>
-
-               <label for="email">Email:</label>
-               <input type="email" id="email" name="email" placeholder="example@email.com" required>
-
-               <label for="message">Message:</label>
-               <textarea id="message" name="message" rows="5" required></textarea>
-
-               <button class="btn" type="submit">Submit</button>
-            </form>
+            <h1>Submission Received</h1>
+            <p>Thanks for reaching out! I'll be sure to get in touch.</p>
+            <a href="index.html" class="btn">Return Home</a>
          </div>
       </div>
       <footer>
          <p>&copy; 2023 Jacob Colby</p>
          <li>
-            <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
          </li>
       </footer>
    </body>
