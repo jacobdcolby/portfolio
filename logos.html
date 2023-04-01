@@ -96,8 +96,8 @@
             </a>
          </div>
          <ul class="desktop-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#project-gallery">Projects</a></li>
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html#project-gallery">Projects</a></li>
             <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
             <li><a href="contact.html">Contact</a></li>
          </ul>
@@ -109,92 +109,22 @@
       </div>
    </nav>
    <ul onclick="iconChange()" id="mobile-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#project-gallery">Projects</a></li>
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html#project-gallery">Projects</a></li>
       <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
    </ul>
-   <body id="noscroll">
-      <div class="body-wrapper">
-         <section id="about">
-            <h1 #about>Hi, I'm Jacob Colby.</h1>
-            <br>
-            <p>I'm a senior at Illinois State University studying <b style="color: #d2d2d2; font-weight: 500;">Game Design</b> (Creative Technologies). I chose to combine my passion for both graphic design and video games to create artwork that enhances the visual experience for players. My projects consist of work I've done in <span class="tag game-design">Game Design</span>, <span class="tag level-design">Level Design</span>, and <span class="tag graphic-design">Graphic Design</span>.</p>
-            <li class="icon-links">
-               <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-               <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
-            </li>
-            <a href="#project-gallery" class="down-arrow">&#8595</a>
-         </section>
-         <h1 class="h1-width" id="project-gallery">Projects & Collections</h1>
-         <div class="filter-view">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="level-design">Level Design</button>
-            <button class="filter-btn" data-filter="graphic-design">Graphic Design</button>
-            <button class="filter-btn" data-filter="game-design">Game Design</button>
-         </div>
-         <div class="project-container">
-            <div class="project" data-tag="graphic-design level-design">
-               <a href="quadlevel.html">
-                  <img src="Assets/Projects/QuadMapProject/Final.JPG" alt="Project 1">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Level of ISU's Quad</h3>
-                        <p class="desc">A level design based off of Illinois State's quad layout done in an isometric perspective.</p>
-                     </div>
-                     <p class="tags"><span class="tag level-design">Procreate</span></p>
-                  </div>
-               </a>
+   <body id="noscroll" class="project-page" onload="showSlides(1)">
+      <div class ="body-wrapper">
+        <div class="gallery">
+            <div class="text-box">
+               <h1>Logos</h1>
+               <p>A collection of my logos created for personal and company branding.</p>
             </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="banners.html">
-                  <img src="Assets/Projects/Banners/OpTic Crashies.png" alt="Project 3">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Social Media Banners</h3>
-                        <p class="desc">A collection of banners I've made for others' social media profiles.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="illustrations.html">
-                  <img src="Assets/Projects/Illustrations/KAYO.jpg" alt="Illustrations">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Illustrations</h3>
-                        <p class="desc">A collection of my illustrations that include portraits, emotes, pixel art, and more.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span><span class="tag graphic-design">Procreate</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="level-design">
-               <a href="portallevel.html">
-                  <img src="Assets/Projects/PortalProject/Screenshot1.png" alt="Project 2">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Portal 2 Level Design</h3>
-                        <p class="desc">A puzzle design made in Portal 2's level editor.</p>
-                     </div>
-                     <p class="tags"><span class="tag level-design">Valve Editor</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="logos.html">
-                  <img src="Assets/Projects/Logos/DesignFlex.png" alt="Illustrations">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Logos</h3>
-                        <p class="desc">A collection of my logos created for personal and company branding.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Illustrator</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
+            <img src="Assets/Projects/Logos/DesignFlex.png">
+            <img src="Assets/Projects/Logos/Colbs.png">
+            <img src="Assets/Projects/Logos/Cpetti.png">
+        </div>
       </div>
       <footer>
          <p>&copy; 2023 Jacob Colby</p>

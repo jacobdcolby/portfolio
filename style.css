@@ -384,6 +384,16 @@ section#about p {
 	display: inline-block;
 }
 
+.project-description a {
+	color: #c1c1c1;
+	transition: 0.2s ease-in-out;
+}
+
+.project-description a:hover {
+	color: #8ad2ff;
+	transition: 0.2s ease-in-out;
+}
+
 .game-design {
 	background-color: #fbf090;
 	box-shadow: 0 0 10px 0 rgba(251, 240, 144, 0.2),
