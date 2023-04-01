@@ -3,13 +3,14 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jacob Colby | Game Artist</title>
+      <title>Jacob Colby | Game Asset Artist</title>
       <link rel="stylesheet" href="style.css">
       <link rel="icon" href="Assets/Images/logo.png">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
       <script src="filters.js"></script>
       <script src="slideshow.js"></script>
       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://www.behance.net/forwrds?embed=1"></script>
       <script>
          // Mobile Menu
          function hamburger() {
@@ -30,21 +31,24 @@
          function iconChange() {
             var text = icon.textContent;
             var dropdown = document.getElementById("mobile-links");
+            var body = document.getElementById("noscroll");
             if (text === String.fromCharCode(8801)) {
+               body.style.overflow = "hidden";
                icon.textContent = String.fromCharCode(215);
                dropdown.style.display = "flex";
             } else {
+               body.style.overflow = "visible";
                icon.textContent = String.fromCharCode(8801);
                dropdown.style.display = "flex";
             }
          }
 
          document.addEventListener('DOMContentLoaded', () => {
-            // Variables
-            var mobile = document.getElementById("mobile-nav");
-            var dropdown = document.getElementById("mobile-links");
-            var icon = document.getElementById("icon");
-            var text = icon.textContent;
+         // Variables
+         var mobile = document.getElementById("mobile-nav");
+         var dropdown = document.getElementById("mobile-links");
+         var icon = document.getElementById("icon");
+         var text = icon.textContent;
 
             // Smooth Scrolling
             $(document).ready(function() {
@@ -63,8 +67,9 @@
                var mobile = document.getElementById("mobile-nav");
                var dropdown = document.getElementById("mobile-links");
                var icon = document.getElementById("icon");
+               var body = document.getElementById("noscroll");
                if (window.innerWidth < 680) {
-                  dropdown.style.display = "flex";
+                  dropdown.style.display = "none";
                   mobile.style.visibility = "visible";
                   mobile.style.opacity = "1";
                   mobile.style.display = "block";
@@ -109,7 +114,7 @@
       <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
    </ul>
-   <body class="project-page" onload="showSlides(1)">
+   <body id="noscroll" class="project-page" onload="showSlides(1)">
       <div class="body-wrapper">
          <div class="project-body">
             <div class="slideshow-container">
