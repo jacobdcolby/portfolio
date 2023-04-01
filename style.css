@@ -269,7 +269,8 @@ section h1 {
 }
 
 section#about {
-	padding: 25vh 25vw 40vh 25vw;
+	padding: 0 25vw;
+	min-height: 90vh;
 }
 
 section#about p {
@@ -696,7 +697,7 @@ footer li {
 	  grid-template-columns: repeat(3, 1fr);
 	}
 	section#about {
-		padding: 20vh 20vw 40vh 20vw;
+		padding: 0 20vw;
 	}
 	section#about h1 {
 		font-size: 42px;
@@ -720,7 +721,7 @@ footer li {
 		font-size: 36px;
 	}
 	section#about {
-		padding: 15vh 15vw 40vh 15vw;
+		padding: 0 15vw;
 	}
 	section#about p {
 		font-size: 16px;
@@ -741,7 +742,7 @@ footer li {
 		font-size: 30px;
 	}
 	section#about {
-		padding: 10vh 10vw 40vh 10vw;
+		padding: 0 10vw;
 	}
 	section#about p {
 		font-size: 15px;
