@@ -50,40 +50,40 @@
          var icon = document.getElementById("icon");
          var text = icon.textContent;
 
-            // Smooth Scrolling
-            $(document).ready(function() {
-               $('a[href^="#"]').on('click', function(event) {
-                  var target = $(this.getAttribute('href'));
-                  if( target.length ) {
-                     event.preventDefault();
-                     $('html, body').stop().animate({
-                     scrollTop: target.offset().top - 80
-                     }, 600);
-                  }
-               });
-            });          
-            
-            window.addEventListener("resize", function() {
-               var mobile = document.getElementById("mobile-nav");
-               var dropdown = document.getElementById("mobile-links");
-               var icon = document.getElementById("icon");
-               var body = document.getElementById("noscroll");
-               if (window.innerWidth < 680) {
-                  dropdown.style.display = "none";
-                  mobile.style.visibility = "visible";
-                  mobile.style.opacity = "1";
-                  mobile.style.display = "block";
-               } else {
-                  dropdown.style.display = "none";
-                  dropdown.style.visibility = "hidden";
-                  dropdown.style.opacity = "0";
-                  mobile.style.visibility = "hidden";
-                  mobile.style.opacity = "0";
-                  mobile.style.display = "none";
-                  icon.textContent = String.fromCharCode(8801);
+         // Smooth Scrolling
+         $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(event) {
+               var target = $(this.getAttribute('href'));
+               if( target.length ) {
+                  event.preventDefault();
+                  $('html, body').stop().animate({
+                  scrollTop: target.offset().top - 80
+                  }, 600);
                }
             });
+         });          
+            
+         window.addEventListener("resize", function() {
+            var mobile = document.getElementById("mobile-nav");
+            var dropdown = document.getElementById("mobile-links");
+            var icon = document.getElementById("icon");
+            var body = document.getElementById("noscroll");
+            if (window.innerWidth < 680) {
+               dropdown.style.display = "none";
+               mobile.style.visibility = "visible";
+               mobile.style.opacity = "1";
+               mobile.style.display = "block";
+            } else {
+               dropdown.style.display = "none";
+               dropdown.style.visibility = "hidden";
+               dropdown.style.opacity = "0";
+               mobile.style.visibility = "hidden";
+               mobile.style.opacity = "0";
+               mobile.style.display = "none";
+               icon.textContent = String.fromCharCode(8801);
+            }
          });
+      });
       </script>
    </head>
    <nav>
@@ -119,11 +119,13 @@
          <section>
             <h1>Contact Me</h1>
          </section>
-         <form>
+         <form netlify>
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
             <label for="message">Message:</label>
             <textarea id="message" name="message" rows="5" required></textarea>
             <button type="submit">Submit</button>
