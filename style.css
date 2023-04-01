@@ -342,6 +342,10 @@ section#about p {
 	width: 60vw;
 }
 
+.tile p {
+	text-align: center;
+}
+
 /* Tags and Projects */
 .title-tags-container {
 	position: relative;
