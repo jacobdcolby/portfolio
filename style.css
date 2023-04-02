@@ -503,8 +503,8 @@ section#about p {
 }
 
 .filter-btn#lvl {
-	border: solid 1px rgba(146, 111, 191, 0.3);
-	background-color: #29262f;
+	border: solid 1px rgba(146, 111, 191, 0.0);
+	background-color: #3a3448;
 }
 
 .filter-btn.active#lvl {
@@ -513,8 +513,8 @@ section#about p {
 }
 
 .filter-btn#gfx {
-	border: solid 1px rgba(138, 210, 255, 0.3);
-	background-color: #282d34;
+	border: solid 1px rgba(138, 210, 255, 0.0);
+	background-color: #2f3b4c;
 }
 
 .filter-btn.active#gfx {
@@ -523,8 +523,8 @@ section#about p {
 }
 
 .filter-btn#gd {
-	border: solid 1px rgb(251, 240, 144, 0.3);
-	background-color: #2f2d24;
+	border: solid 1px rgb(251, 240, 144, 0.0);
+	background-color: #49442d;
 }
 
 .filter-btn.active#gd {
