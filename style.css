@@ -1,5 +1,4 @@
 /* Global styles */
-
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -505,31 +504,37 @@ section#about p {
 .filter-btn#lvl {
 	border: solid 1px rgba(146, 111, 191, 0.0);
 	background-color: #3a3448;
+	color: #bca5d7
 }
 
 .filter-btn.active#lvl {
 	border: solid 1px #926fbf;
 	background-color: #3f3550;
+	color:  #f8dbfd;
 }
 
 .filter-btn#gfx {
 	border: solid 1px rgba(138, 210, 255, 0.0);
 	background-color: #2f3b4c;
+	color: #9abfd6
 }
 
 .filter-btn.active#gfx {
 	border: solid 1px #8ad2ff;
 	background-color: #354050;
+	color:  #e1f5fb;
 }
 
 .filter-btn#gd {
 	border: solid 1px rgb(251, 240, 144, 0.0);
 	background-color: #49442d;
+	color: #e3ddac;
 }
 
 .filter-btn.active#gd {
 	border: solid 1px #fbf090;
 	background-color: #504d35;
+	color:  #fffbdf;
 }
 
 .filter-btn:hover {
