@@ -1,90 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jacob Colby | Game Asset Artist</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="icon" href="Assets/Images/logo.png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-      <script src="filters.js"></script>
-      <script src="slideshow.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-      <script>
-         // Mobile Menu
-         function hamburger() {
-            var dropdown = document.getElementById("mobile-links");
-            if (dropdown.style.visibility === "visible") {
-               dropdown.style.visibility = "hidden";
-               dropdown.style.opacity = "0";
-            } else {
-               dropdown.style.visibility = "visible";
-               dropdown.style.opacity = "1";
-            }
-            dropdown.addEventListener('click', function handleClick() {
-               dropdown.style.visibility = "hidden";
-               dropdown.style.opacity = "0";
-            });
-         }
 
-         function iconChange() {
-            var text = icon.textContent;
-            var dropdown = document.getElementById("mobile-links");
-            var body = document.getElementById("noscroll");
-            if (text === String.fromCharCode(8801)) {
-               body.style.overflow = "hidden";
-               icon.textContent = String.fromCharCode(215);
-               dropdown.style.display = "flex";
-            } else {
-               body.style.overflow = "visible";
-               icon.textContent = String.fromCharCode(8801);
-               dropdown.style.display = "flex";
-            }
-         }
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Jacob Colby | Game Asset Artist</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="Assets/Images/logo.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!--Font Awesome Icon Pack-->
+   <script src="main.js"></script> <!--Main Script for Header and Smooth Scrolling-->
+   <script src="filters.js"></script> <!--Home Page Filter Views-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--JQuery-->
 
-         document.addEventListener('DOMContentLoaded', () => {
-         // Variables
-         var mobile = document.getElementById("mobile-nav");
-         var dropdown = document.getElementById("mobile-links");
-         var icon = document.getElementById("icon");
-         var text = icon.textContent;
+   <!--Lightbox Scripts-->
+   <link rel="stylesheet" href="Add-Ons/Lightbox/css/lightbox.css">
+   <script src="Add-Ons/Lightbox/js/lightbox.js"></script>
+   <script>
+      lightbox.option({
+         'resizeDuration': 200,
+         'wrapAround': true,
+         'disableScrolling': true
+      })
+   </script>
+</head>
 
-            // Smooth Scrolling
-            $(document).ready(function() {
-               $('a[href^="#"]').on('click', function(event) {
-                  var target = $(this.getAttribute('href'));
-                  if( target.length ) {
-                     event.preventDefault();
-                     $('html, body').stop().animate({
-                     scrollTop: target.offset().top - 80
-                     }, 600);
-                  }
-               });
-            });          
-            
-            window.addEventListener("resize", function() {
-               var mobile = document.getElementById("mobile-nav");
-               var dropdown = document.getElementById("mobile-links");
-               var icon = document.getElementById("icon");
-               var body = document.getElementById("noscroll");
-               if (window.innerWidth < 680) {
-                  dropdown.style.display = "none";
-                  mobile.style.visibility = "visible";
-                  mobile.style.opacity = "1";
-                  mobile.style.display = "block";
-               } else {
-                  dropdown.style.display = "none";
-                  dropdown.style.visibility = "hidden";
-                  dropdown.style.opacity = "0";
-                  mobile.style.visibility = "hidden";
-                  mobile.style.opacity = "0";
-                  mobile.style.display = "none";
-                  icon.textContent = String.fromCharCode(8801);
-               }
-            });
-         });
-      </script>
-   </head>
+<body id="noscroll">
    <nav>
       <div class="navbar-container">
          <div href="index.html" class="logo-container">
@@ -101,52 +42,98 @@
             <li><a href="contact.html">Contact</a></li>
          </ul>
          <div class="mobile-nav" id="mobile-nav">
-            <a href="javascript:void(0);" onclick="hamburger()">
-               <p onclick="iconChange()" id="icon">&#8801</p>
-            </a>
+            <img onclick="hamburger()" src="Assets/Images/logo.png" style="height: 50px; display: block;"></img>
          </div>
       </div>
    </nav>
-   <ul onclick="iconChange()" id="mobile-links">
+   <ul id="mobile-links">
       <li><a href="index.html">About</a></li>
       <li><a href="index.html#project-gallery">Projects</a></li>
       <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
       <li><a href="contact.html">Contact</a></li>
    </ul>
-   <body id="noscroll" class="project-page" onload="showSlides(1)">
+
+   <body id="noscroll" class="project-page">
       <div class="body-wrapper">
-         <div class="project-body">
+         <div class="slides-wrapper">
+            <h1>Level of ISU's Quad</h1>
+            <p class="subtitle">A puzzle design made in Portal 2's level editor.</p>
             <div class="slideshow-container">
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot1.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">1 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot1.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot1.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot2.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">2 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot2.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot2.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot3.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">3 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot3.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot3.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot4.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">4 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot4.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot4.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot5.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">5 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot5.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot5.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot6.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">6 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot6.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot6.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot7.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">7 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot7.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot7.png">
+                  </a>
                </div>
-               <div class="slides">
-                  <img src="Assets/Projects/PortalProject/Screenshot8.png">
+
+               <div class="mySlides">
+                  <div class="numbertext">8 / 8</div>
+                  <a data-lightbox="image" href="Assets/Projects/PortalProject/Screenshot8.png">
+                     <img src="Assets/Projects/PortalProject/Screenshot8.png">
+                  </a>
                </div>
-               <a class="prev" onclick="plusSlides(-1)">❮</a>
-               <a class="next" onclick="plusSlides(1)">❯</a>
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <br>
+
+            <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+               <span class="dot" onclick="currentSlide(4)"></span>
+               <span class="dot" onclick="currentSlide(5)"></span>
+               <span class="dot" onclick="currentSlide(6)"></span>
+               <span class="dot" onclick="currentSlide(7)"></span>
+               <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+
             <div class="project-description">
-                <h1>Portal 2 Level Design</h1>
-                <h2>Objective</h2>
+               <h2>Objective</h2>
                 <p>The goal of this project was to develop a level in an existing game that was playable by the public. The level should have a balance between difficulty and an enjoyable playthrough experience.</p>
                 <br>
                 <h2>Process</h2>
@@ -158,11 +145,15 @@
             </div>
          </div>
       </div>
+      <!--Slides Script-->
+      <script src="slideshow.js"></script>
       <footer>
          <p>&copy; 2023 Jacob Colby</p>
          <li>
-            <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+            <a href="https://www.linkedin.com/in/jacob-colby-771ab7265/" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i
+                  class="fab fa-behance"></i></a>
          </li>
       </footer>
    </body>
