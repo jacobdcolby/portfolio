@@ -369,7 +369,7 @@ section#about p {
 .tags {
 	color: grey;
 	display: block;
-	margin-top: 10px;
+	margin-top: auto;
 	bottom: 0;
 }
 
@@ -378,7 +378,7 @@ section#about p {
 	border-radius: 4px;
 	font-size: 16px;
 	font-weight: 500;
-	margin: 2px;
+	margin: 2px 4px 0px 0px;
 	width: fit-content;
 	white-space: nowrap;
 	padding: 4px 8px;
@@ -441,7 +441,9 @@ section#about p {
 	padding: 0;
 	border-radius: 10px;
 	transition: 0.2s ease-out;
-	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .project:not(:hover) {
@@ -457,6 +459,7 @@ section#about p {
 
 .project a {
 	text-decoration: none;
+	flex-grow: 1;
 }
 
 .project p.desc {
@@ -480,7 +483,8 @@ section#about p {
 }
 
 .title-desc {
-	margin-bottom: auto;
+	flex-grow: 1;
+	margin-bottom: 20px;
 }
 
 /* Filter Views */
@@ -844,6 +848,9 @@ footer li {
 	.project-container {
 		grid-gap: 5px;
 		padding: 60px 5px;
+	}
+	.title-tags-container {
+		height: calc(100% - 160px);
 	}
 	.project a img {
 		height: 150px;
