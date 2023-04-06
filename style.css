@@ -427,8 +427,8 @@ section#about p {
 .project-container {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
-	grid-gap: 15px;
-	padding: 60px 10vw;
+	grid-gap: 10px;
+	padding: 60px 10px;
 	margin: 0;
 	background-color: #151419;
 	border-bottom-left-radius: 50px;
@@ -840,7 +840,11 @@ footer li {
 
 @media only screen and (max-width: 680px) {
 	.project-container {
-	  grid-template-columns: repeat(1, 1fr);
+		grid-gap: 5px;
+		padding: 60px 5px;
+	}
+	.project a img {
+		height: 150px;
 	}
 	section#about h1 {
 		font-size: 30px;
