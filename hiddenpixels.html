@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Portal 2 Level Design</title>
+   <link rel="stylesheet" href="style.css">
+   <link rel="icon" href="Assets/Images/logo.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!--Font Awesome Icon Pack-->
+   <script src="main.js"></script> <!--Main Script for Header and Smooth Scrolling-->
+   <script src="filters.js"></script> <!--Home Page Filter Views-->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--JQuery-->
+
+   <!--Lightbox Scripts-->
+   <link rel="stylesheet" href="Add-Ons/Lightbox/css/lightbox.css">
+   <script src="Add-Ons/Lightbox/js/lightbox.js"></script>
+   <script>
+      lightbox.option({
+         'resizeDuration': 200,
+         'wrapAround': true,
+         'disableScrolling': true
+      })
+   </script>
+</head>
+
+<body id="noscroll">
+   <nav>
+      <div class="navbar-container">
+         <div href="index.html" class="logo-container">
+            <a href="index.html">
+               <img class="logo-main" src="Assets/Images/logo.png">
+               <img class="logo-hover" src="Assets/Images/logo-blue.png">
+               <img class="logo-hover2" src="Assets/Images/logo-purple.png">
+            </a>
+         </div>
+         <ul class="desktop-nav">
+            <li><a href="index.html">About</a></li>
+            <li><a href="index.html#project-gallery">Projects</a></li>
+            <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+         </ul>
+         <div class="mobile-nav" id="mobile-nav">
+            <img onclick="hamburger()" src="Assets/Images/logo.png" style="height: 50px; display: block;"></img>
+         </div>
+      </div>
+   </nav>
+   <ul id="mobile-links">
+      <li><a href="index.html">About</a></li>
+      <li><a href="index.html#project-gallery">Projects</a></li>
+      <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+      <li><a href="contact.html">Contact</a></li>
+   </ul>
+
+   <body id="noscroll" class="project-page">
+      <div class="body-wrapper">
+         <div class="slides-wrapper">
+            <h1>Hidden Pixels Game</h1>
+            <p class="subtitle">Pixel art created for a point and click exploration game.</p>
+            <div class="slideshow-container">
+
+               <div class="mySlides">
+                  <div class="numbertext">1 / 4</div>
+                  <a data-lightbox="image" href="Assets/Projects/MenuGame/Level 1.png">
+                     <img src="Assets/Projects/MenuGame/Level 1.png">
+                  </a>
+               </div>
+
+               <div class="mySlides">
+                  <div class="numbertext">2 / 4</div>
+                  <a data-lightbox="image" href="Assets/Projects/MenuGame/Level 2.png">
+                     <img src="Assets/Projects/MenuGame/Level 2.png">
+                  </a>
+               </div>
+
+               <div class="mySlides">
+                  <div class="numbertext">3 / 4</div>
+                  <a data-lightbox="image" href="Assets/Projects/MenuGame/Level 3.png">
+                     <img src="Assets/Projects/MenuGame/Level 3.png">
+                  </a>
+               </div>
+
+               <div class="mySlides">
+                  <div class="numbertext">4 / 4</div>
+                  <a data-lightbox="image" href="Assets/Projects/MenuGame/Hidden Pixels Poster.png">
+                     <img src="Assets/Projects/MenuGame/Hidden Pixels Poster.png">
+                  </a>
+               </div>
+
+               <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+               <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align:center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+               <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+
+            <div class="project-description">
+               <h2>Objective</h2>
+                <p>The goal of this project was to develop a game that was fully playable within Adobe InDesign. The game is played by trying to find the hidden "key" that allows you to travel into the next biome.</p>
+                <br>
+                <h2>Process</h2>
+                <p>My role in this project was to create the artwork for the menu, levels, and poster design. We chose to use a pixel art style and I created different themed biomes where the player would have to guess which object was the key to escape to the next world.</p>
+                <span class="tag game-design">Aseprite</span>
+            </div>
+         </div>
+      </div>
+      <!--Slides Script-->
+      <script src="slideshow.js"></script>
+      <footer>
+         <p>&copy; 2023 Jacob Colby</p>
+         <li>
+            <a href="https://www.linkedin.com/in/jacob-colby" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+         </li>
+      </footer>
+   </body>
+</html>

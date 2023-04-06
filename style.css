@@ -369,7 +369,7 @@ section#about p {
 .tags {
 	color: grey;
 	display: block;
-	margin-top: auto;
+	margin-top: 18px;
 	bottom: 0;
 }
 
@@ -430,7 +430,7 @@ section#about p {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 10px;
-	padding: 60px 10px;
+	padding: 60px 80px;
 	margin: 0;
 	background-color: #151419;
 	border-bottom-left-radius: 50px;
@@ -484,7 +484,7 @@ section#about p {
 
 .title-desc {
 	flex-grow: 1;
-	margin-bottom: 20px;
+	margin-bottom: auto;
 }
 
 /* Filter Views */
@@ -805,6 +805,7 @@ footer li {
 @media only screen and (max-width: 1300px) {
 	.project-container {
 	  grid-template-columns: repeat(3, 1fr);
+	  padding: 60px;
 	}
 	section#about {
 		padding: 0 20vw;
@@ -826,6 +827,7 @@ footer li {
 @media only screen and (max-width: 900px) {
 	.project-container {
 	  grid-template-columns: repeat(2, 1fr);
+	  padding: 60px 30px;
 	}
 	section#about h1 {
 		font-size: 36px;
