@@ -822,6 +822,9 @@ footer li {
 	.tile {
 		width: 70vw;
 	}
+	.gallery {
+		margin: 10px 8vw;
+	}
 }
 
 @media only screen and (max-width: 900px) {
@@ -843,6 +846,9 @@ footer li {
 	}
 	.tile {
 		width: 80vw;
+	}
+	.gallery {
+		margin: 10px 6vw;
 	}
 }
 
@@ -883,6 +889,9 @@ footer li {
 	}
 	.tile {
 		width: 90vw;
+	}
+	.gallery {
+		margin: 10px 4vw;
 	}
 }
 
