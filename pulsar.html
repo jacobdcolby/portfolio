@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Gaming Mouse Web Design</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="Assets/Images/logo.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!--Font Awesome Icon Pack-->
+      <script src="main.js"></script> <!--Main Script for Header and Smooth Scrolling-->
+      <script src="filters.js"></script> <!--Home Page Filter Views-->
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--JQuery-->
+
+      <!--Lightbox Scripts-->
+      <link rel="stylesheet" href="Add-Ons/Lightbox/css/lightbox.css">
+      <script src="Add-Ons/Lightbox/js/lightbox.js"></script>
+      <script>
+         lightbox.option({
+            'resizeDuration': 200,
+            'wrapAround': true,
+            'disableScrolling': true
+         })
+      </script>
+   </head>
+   <body id="noscroll">
+      <nav>
+         <div class="navbar-container">
+            <div href="index.html" class="logo-container">
+               <a href="index.html">
+                  <img class="logo-main" src="Assets/Images/logo.png">
+                  <img class="logo-hover" src="Assets/Images/logo-blue.png">
+                  <img class="logo-hover2" src="Assets/Images/logo-purple.png">
+               </a>
+            </div>
+            <ul class="desktop-nav">
+               <li><a href="index.html">About</a></li>
+               <li><a href="index.html#project-gallery">Projects</a></li>
+               <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+               <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mobile-nav" id="mobile-nav">
+               <img onclick="hamburger()" src="Assets/Images/logo.png" style="height: 50px; display: block;"></img>
+            </div>
+         </div>
+      </nav>
+      <ul id="mobile-links">
+         <li><a href="index.html">About</a></li>
+         <li><a href="index.html#project-gallery">Projects</a></li>
+         <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+         <li><a href="contact.html">Contact</a></li>
+      </ul>
+   <body id="noscroll" class="project-page">
+      <div class ="body-wrapper">
+        <div class="gallery">
+            <div class="text-box">
+               <h1>Gaming Mouse Web Design</h1>
+               <p>Sample website mockup for Pulsar's X2 wireless mouse.</p>
+            </div>
+            <a data-lightbox="image" href="Assets/Projects/Pulsar/1.png" >
+               <img src="Assets/Projects/Pulsar/1.png" style="max-height: 100%">
+            </a>
+            <a data-lightbox="image" href="Assets/Projects/Pulsar/2.png">
+               <img src="Assets/Projects/Pulsar/2.png" style="max-height: 100%">
+            </a>
+            <a data-lightbox="image" href="Assets/Projects/Pulsar/3.png">
+               <img src="Assets/Projects/Pulsar/3.png" style="max-height: 100%">
+            </a>
+            <a data-lightbox="image" href="Assets/Projects/Pulsar/4.png">
+               <img src="Assets/Projects/Pulsar/4.png" style="max-height: 100%">
+            </a>
+            <a data-lightbox="image" href="Assets/Projects/Pulsar/5.png">
+               <img src="Assets/Projects/Pulsar/5.png" style="max-height: 100%">
+            </a>
+        </div>
+      </div>
+      <footer>
+         <p>&copy; 2023 Jacob Colby</p>
+         <li>
+            <a href="https://www.linkedin.com/in/jacob-colby" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
+         </li>
+      </footer>
+   </body>
+</html>
