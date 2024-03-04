@@ -279,7 +279,7 @@ p {
 }
 /* Contact Form */
 #contact {
-	height: calc(100vh - 80px);
+	height: calc(100vh - 90px);
 	padding: 10px 15px;
 }
 form {
