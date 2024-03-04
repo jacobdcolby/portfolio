@@ -48,7 +48,8 @@
                                 const projectsDiv = document.getElementById('projects');
                                 data.forEach(project => {
                                     const projectTileLink = document.createElement('a');
-                                    projectTileLink.href = project.file;
+                                    projectTileLink.href = `assets/projects/${project.file}/${project.file}.html`;
+                                    projectTileLink.classList.add('project-tile-link');
                     
                                     const projectTile = document.createElement('div');
                                     projectTile.classList.add('project-tile');

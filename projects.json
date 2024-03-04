@@ -1,7 +1,7 @@
 [
     {
         "file": "pulsar.html",
-        "preview": "pulsar/1.png",
+        "preview": "assets/projects/pulsar/1.png",
         "title": "Pulsar Product Page",
         "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
         "long-desc": "",
@@ -10,7 +10,7 @@
     },
     {
         "file": "vct2023.html",
-        "preview": "vct2023/1.png",
+        "preview": "assets/projects/vct2023/1.png",
         "title": "Valorant Champions Tour 2023 Graphics",
         "short-desc": "Created graphics for upcoming and finished matches in Valorant's 2023 Championship Tour using Photoshop.",
         "long-desc": "",
@@ -19,7 +19,7 @@
     },
     {
         "file": "quad-level.html",
-        "preview": "quad-level/1.JPG",
+        "preview": "assets/projects/quad-level/1.JPG",
         "title": "Isometric Level of Illinois State's Quad",
         "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
         "long-desc": "",
@@ -28,7 +28,7 @@
     },
     {
         "file": "portal-level.html",
-        "preview": "portal-level/1.png",
+        "preview": "assets/projects/portal-level/1.png",
         "title": "Portal 2 Level Design",
         "short-desc": "Created a playable level within Portal 2 that features an innovative use of portal mechanics, while offering players a challenging and engaging puzzle within the game.",
         "long-desc": "",
