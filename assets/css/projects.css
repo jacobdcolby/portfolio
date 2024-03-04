@@ -1,0 +1,258 @@
+/* Projects Page */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    --white: #ffffff;
+    --accent: rgb(99, 231, 209);
+    --accent-bg: rgba(99, 231, 209, 0.15);
+    --accent-bg-hover: rgba(99, 231, 209, 0.25);
+    --accent-text: rgb(148, 212, 202);
+    --text1: #ffffff;
+    --text2: #e0eefa;
+    --text3: #88afcf;
+    --element-bg: rgb(136, 175, 207, 0.02);
+    --element-bg-hover: rgb(136, 175, 207, 0.06);
+}
+
+body {
+    margin: 0;
+    font-family: WorkSans, sans-serif;
+    background: linear-gradient(#12203b, black);
+    /* For webkit (Safari, Chrome) */
+    background: -webkit-linear-gradient(#12203b, black);
+    /* For Mozilla Firefox */
+    background: -moz-linear-gradient(#12203b, black);
+    /* For Internet Explorer 10+ */
+    background: -ms-linear-gradient(#12203b, black);
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+    width: 100vw;
+}
+
+.projects-container {
+    padding: 5% 10%;
+    color: white;
+    max-width: 1500px;
+    margin: auto;
+}
+
+.back-button {
+    color: var(--accent);
+}
+
+.project-list {
+    width: 100%;
+}
+
+.project-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--element-bg-hover);
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    height: 80px;
+}
+
+.project-titles {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--element-bg);
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-item:hover {
+    background-color: var(--element-bg-hover);
+}
+
+.project-item:hover .project-link {
+    color: var(--accent);
+}
+
+.project-item:hover .bubble  {
+    background-color: var(--accent-bg-hover);
+}
+
+.project-item > div {
+    text-align: left;
+}
+
+.header-img {
+    flex: 1.5;
+    padding: 5px;
+    margin: 0 15px 0 5px;
+}
+
+
+
+.project-name,
+.header-title {
+    flex: 7;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.project-name {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.software-used {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.software-used,
+.header-software-used {
+    flex: 4.5;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.bubbles {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* Image Container */
+.img-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 2px;
+    outline: var(--element-bg) solid 2px;
+}
+
+.project-item:hover .img-container {
+    outline: var(--element-bg-hover) solid 2px;
+}
+
+.project-img {
+    flex: 1.5;
+    margin: 0 15px 0 5px;
+    padding: 5px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.project-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.header-date,
+.project-date {
+    flex: 1;
+}
+
+.project-date {
+    color: var(--text3);
+    font-weight: 300;
+}
+
+.redirect {
+    display: none;
+}
+
+.gallery img {
+    width: 100%;
+}
+
+.gallery h1 {
+    font-family: WorkSans;
+    font-weight: 500;
+    font-size: 30px;
+    text-decoration: underline;
+    text-underline-offset: 12px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: var(--text3);
+    margin-bottom: 30px;
+}
+
+.gallery-text {
+    margin: 80px 0;
+}
+
+.more-projects {
+    padding: 30px 0;
+    text-align: center;
+}
+
+.more-projects a {
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text2);
+    padding: 5px;
+    margin: 0;
+}
+
+.more-projects a h3:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    .bubbles,
+    .software-used,
+    .header-software-used {
+        display: none;
+    }
+    .gallery h1 {
+        font-size: 26px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .redirect {
+        display: inline-block;
+    }
+    .projects-container {
+        padding: 5%;
+    }
+    .project-img,
+    .header-img {
+        margin: 0 5px;
+        flex: 2;
+    }
+    .project-name {
+        white-space: wrap;
+        overflow: visible;
+        font-size: 14px;
+    }
+
+    .header-date,
+    .project-date {
+        display: none;
+    }
+    .project-titles {
+        display: none;
+    }
+    .project-item {
+        height: 100px;
+    }
+    .project-img {
+        height: 90px;
+    }
+}

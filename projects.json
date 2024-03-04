@@ -1,0 +1,34 @@
+[
+    {
+        "file": "pulsar.html",
+        "title": "Pulsar Product Page",
+        "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
+        "long-desc": "",
+        "software": ["Photoshop", "HTML", "CSS"],
+        "year": "2023"
+    },
+    {
+        "file": "vct2023.html",
+        "title": "Valorant Champions Tour 2023 Graphics",
+        "short-desc": "Created graphics for upcoming and finished matches in Valorant's 2023 Championship Tour using Photoshop.",
+        "long-desc": "",
+        "software": ["Photoshop"],
+        "year": "2023"
+    },
+    {
+        "file": "quad-level.html",
+        "title": "Isometric Level of Illinois State's Quad",
+        "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
+        "long-desc": "",
+        "software": ["Procreate"],
+        "year": "2023"
+    },
+    {
+        "file": "portal-level.html",
+        "title": "Portal 2 Level Design",
+        "short-desc": "Created a playable level within Portal 2 that features an innovative use of portal mechanics, while offering players a challenging and engaging puzzle within the game.",
+        "long-desc": "",
+        "software": ["Valve Editor"],
+        "year": "2023"
+    }
+]

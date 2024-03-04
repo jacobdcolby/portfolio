@@ -1,187 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Jacob Colby | Game Artist</title>
-      <link rel="stylesheet" href="style.css">
-      <link rel="icon" href="Assets/Images/logo.png">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!--Font Awesome Icon Pack-->
-      <script src="main.js"></script> <!--Main Script for Header and Smooth Scrolling-->
-      <script src="filters.js"></script> <!--Home Page Filter Views-->
-      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!--JQuery-->
-   </head>
-   <body id="noscroll">
-      <nav>
-         <div class="navbar-container">
-            <div href="index.html" class="logo-container">
-               <a href="index.html">
-                  <img class="logo-main" src="Assets/Images/logo.png">
-                  <img class="logo-hover" src="Assets/Images/logo-blue.png">
-                  <img class="logo-hover2" src="Assets/Images/logo-purple.png">
-               </a>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/4d70725f49.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top">
+            <div id="fixed">
+                <div class="section profile">
+                    <h1>Jacob Colby</h1>
+                    <h2>Web Designer</h2>
+                    <div class="labels">
+                        <a href="#about" class="label active">ABOUT</a>
+                        <a href="#projects" class="label" >PROJECTS</a>
+                        <a href="#contact" class="label" >CONTACT</a>
+                        <a href="Resume.pdf" target="_blank">RESUME 🡥</a>
+                    </div>
+                </div>
+                <div class="links">
+                    <a title="GitHub" href="https://github.com/jacobdcolby" target="_blank" class="icon-link"><i class="fa-brands fa-github"></i></a>
+                    <a title="LinkedIn" href="https://www.linkedin.com/in/jacob-colby/" target="_blank" class="icon-link"><i class="fa-brands fa-linkedin"></i></a>
+                    <a title="Behance" href="https://www.behance.net/forwrds" target="_blank" class="icon-link"><i class="fa-brands fa-behance"></i></a>
+                </div>
             </div>
-            <ul class="desktop-nav">
-               <li><a href="#about">About</a></li>
-               <li><a href="#project-gallery">Projects</a></li>
-               <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-               <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="mobile-nav" id="mobile-nav">
-               <img onclick="hamburger()" src="Assets/Images/logo.png" style="height: 50px; display: block;"></img>
+        </div>
+        <div class="bottom">
+            <div id="left-side"></div>
+            <div id="right-side">
+                <div class="section" id="about">
+                    <p>I recently completed my studies in <b>game design</b> at Illinois State University, where I refined my skills in graphic design. While I've found joy in my graphic design journey, I've developed a newfound passion for <b>web design</b>. I'm excited to leverage my skills to craft engaging websites that make a lasting impact.</p>
+                    <br>
+                    <a id="link" href="Resume.pdf" target="_blank"><h3>View Full Resume 🡢</h3></a>
+                </div>
+                <div class="section projects" id="projects">
+                    <div class="project-tile">
+                        <div class="project-preview">
+                            <img src="assets/projects/pulsar/1.png">
+                        </div>
+                        <div class="project-details">
+                            <h3>Pulsar Product Page 🡥</h3>
+                            <p>A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.</p>
+                            <div class="software-used">
+                                <span class="bubble">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="project-preview">
+                            <img src="assets/projects/vct2023/1.png">
+                        </div>
+                        <div class="project-details">
+                            <h3>Valorant Champions Tour 2023 Graphics 🡥</h3>
+                            <p> Created graphics for upcoming and finished matches in Valorant's 2023 Championship Tour using Photoshop. The graphics included match schedules, team logos, and event branding to enhance the viewing experience and promote the tournament's excitement.</p>
+                            <div class="software-used">
+                                <span class="bubble">Photoshop</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="project-preview">
+                            <img src="assets/projects/quad-level/1.JPG">
+                        </div>
+                        <div class="project-details">
+                            <h3>Isometric Level of Illinois State's Quad 🡥</h3>
+                            <p>Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.</p>
+                            <div class="software-used">
+                                <span class="bubble">Procreate</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-tile">
+                        <div class="project-preview">
+                            <img src="assets/projects/portal-level/1.png">
+                        </div>
+                        <div class="project-details">
+                            <h3>Portal 2 Level Design 🡥</h3>
+                            <p>Created a playable level within Portal 2 that features an innovative use of portal mechanics, while offering players a challenging and engaging puzzle  within the game.</p>
+                            <div class="software-used">
+                                <span class="bubble">Valve Editor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <a id="link" href="projects.html"><h3>View All Projects 🡢</h3></a>
+                </div>
+                <div class="section" id="contact">
+                    <h2>Contact</h2>
+                    <form 
+                    name="contact"
+                    action="success.html"
+                    method="POST"
+                    autocomplete="off"
+                    data-netlify="true"
+                    >
+                    <input type="text" id="name" name="name" placeholder="Name" required>
+
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+
+                    <textarea id="message" name="message" rows="7" placeholder="Message" required></textarea>
+
+                    <button class="btn" type="submit">Submit</button>
+                    </form>
+                </div>
             </div>
-         </div>
-      </nav>
-      <ul id="mobile-links">
-         <li><a href="#about">About</a></li>
-         <li><a href="#project-gallery">Projects</a></li>
-         <li><a href="Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-         <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="body-wrapper">
-         <section id="about">
-            <h1 #about>Hi, I'm Jacob Colby.</h1>
-            <br>
-            <p>I'm a recent <b style="color: #d2d2d2; font-weight: 500;">Game Design</b> graduate from Illinois State University. My goal is to combine my passion for graphic design and video games into captivating in-game artwork. My projects consist of work I've done in <span class="tag graphic-design">Graphic Design</span>, <span class="tag level-design">Level Design</span>, and <span class="tag game-design">Game Design</span>.</p>
-            <li class="icon-links">
-               <a href="https://www.linkedin.com/in/jacob-colby" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-               <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
-            </li>
-            <a href="#project-gallery" class="down-arrow">&#8595</a>
-         </section>
-         <h1 class="h1-width" id="project-gallery">Projects & Collections</h1>
-         <div class="filter-view">
-            <button id="all" class="filter-btn active" data-filter="all">All</button>
-            <button id="gfx" class="filter-btn" data-filter="graphic-design">Graphic Design</button>
-            <button id="gd" class="filter-btn" data-filter="game-design">Game Design</button>
-            <button id="lvl" class="filter-btn" data-filter="level-design">Level Design</button>
-         </div>
-         <div class="project-container">
-            <div class="project" data-tag="graphic-design">
-               <a href="pulsar.html">
-                  <img src="Assets/Projects/Pulsar/1.png" alt="PulsarMouse">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Gaming Mouse Product Page</h3>
-                        <p class="desc">Sample website mockup for Pulsar's X2 wireless mouse.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="vct2023.html">
-                  <img src="Assets/Projects/VCT2023/FinalsV1.png" alt="VCT2023Finals">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>VALORANT Champions 2023 Graphics</h3>
-                        <p class="desc">Social game day graphics for the final four teams of Valorant Champions Tour 2023.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design game-design">
-               <a href="furiousfortress.html">
-                  <img src="Assets/Projects/FuriousFortress/Preview.png" alt="Furious Fortress">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Furious Fortress</h3>
-                        <p class="desc">Menu and interface assets for a mobile medieval fighting game.</p>
-                     </div>
-                     <p class="tags"><span class="tag game-design">Photoshop</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design level-design">
-               <a href="quadlevel.html">
-                  <img src="Assets/Projects/QuadMapProject/Final.JPG" alt="Quad Level Project">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Level of ISU's Quad</h3>
-                        <p class="desc">A level design based off of Illinois State's quad layout done in an isometric perspective.</p>
-                     </div>
-                     <p class="tags"><span class="tag level-design">Procreate</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="banners.html">
-                  <img src="Assets/Projects/Banners/OpTic Crashies.png" alt="Social Banners Collection">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Social Media Banners</h3>
-                        <p class="desc">A collection of social media banners that I've designed.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="illustrations.html">
-                  <img src="Assets/Projects/Illustrations/KAYO.jpg" alt="Illustrations Collection">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Illustrations</h3>
-                        <p class="desc">A collection of my illustrations that include portraits, emotes, pixel art, and more.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Photoshop</span><span class="tag graphic-design">Procreate</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design">
-               <a href="logos.html">
-                  <img src="Assets/Projects/Logos/DesignFlex.png" alt="Logos Collection">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Logos</h3>
-                        <p class="desc">A collection of my logos created for personal and company branding.</p>
-                     </div>
-                     <p class="tags"><span class="tag graphic-design">Illustrator</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="level-design game-design">
-               <a href="portallevel.html">
-                  <img src="Assets/Projects/PortalProject/Screenshot1.png" alt="Portal 2 Project">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Portal 2 Level Design</h3>
-                        <p class="desc">A puzzle design made in Portal 2's level editor.</p>
-                     </div>
-                     <p class="tags"><span class="tag level-design">Valve Editor</span></p>
-                  </div>
-               </a>
-            </div>
-            <div class="project" data-tag="graphic-design game-design">
-               <a href="hiddenpixels.html">
-                  <img src="Assets/Projects/MenuGame/Level 1.png" alt="Hidden Pixels Project">
-                  <div class="title-tags-container">
-                     <div class="title-desc">
-                        <h3>Hidden Pixels Game</h3>
-                        <p class="desc">Pixel art created for a point and click exploration game.</p>
-                     </div>
-                     <p class="tags"><span class="tag game-design">Aseprite</span></p>
-                  </div>
-               </a>
-            </div>
-         </div>
-      </div>
-      <footer>
-         <p>&copy; 2023 Jacob Colby</p>
-         <li>
-            <a href="https://www.linkedin.com/in/jacob-colby" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.behance.net/forwrds" target="_blank" rel="noopener noreferrer"><i class="fab fa-behance"></i></a>
-         </li>
-      </footer>
-      <script type="text/javascript" src="vanilla-tilt.js"></script>
-      <script type="text/javascript">
-         VanillaTilt.init(document.querySelectorAll(".project"), {
-            max: 5,
-            speed: 600,
-            glare: true,
-            "max-glare": 0.2
-         });
-      </script>
-   </body>
+        </div>
+    </div>
+    <script src="assets/js/scroll.js"></script>
+    <script src="assets/js/hover.js"></script>
+    <script src="assets/js/labels.js"></script>
+</body>
 </html>
