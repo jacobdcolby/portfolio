@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Jacob Colby</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://kit.fontawesome.com/4d70725f49.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -47,13 +47,16 @@
                             .then(data => {
                                 const projectsDiv = document.getElementById('projects');
                                 data.forEach(project => {
+                                    const projectTileLink = document.createElement('a');
+                                    projectTileLink.href = project.file;
+                    
                                     const projectTile = document.createElement('div');
                                     projectTile.classList.add('project-tile');
                     
                                     const projectPreview = document.createElement('div');
                                     projectPreview.classList.add('project-preview');
                                     const previewImg = document.createElement('img');
-                                    previewImg.src = 'assets/projects/' + project.preview;
+                                    previewImg.src = project.preview;
                                     projectPreview.appendChild(previewImg);
                     
                                     const projectDetails = document.createElement('div');
@@ -76,13 +79,19 @@
                     
                                     projectTile.appendChild(projectPreview);
                                     projectTile.appendChild(projectDetails);
+                                    projectTileLink.appendChild(projectTile);
                     
-                                    projectsDiv.appendChild(projectTile);
+                                    projectsDiv.appendChild(projectTileLink);
                                 });
+                    
+                                const viewAllProjectsLink = document.createElement('a');
+                                viewAllProjectsLink.id = 'link';
+                                viewAllProjectsLink.href = 'projects.html';
+                                viewAllProjectsLink.innerHTML = '<h3>View All Projects 🡢</h3>';
+                                projectsDiv.appendChild(viewAllProjectsLink);
                             })
                             .catch(error => console.error('Error fetching data:', error));
                     </script>
-                    <a id="link" href="projects.html"><h3>View All Projects 🡢</h3></a>
                 </div>
                 <div class="section" id="contact">
                     <h2>Contact</h2>
