@@ -35,14 +35,76 @@
         <div class="bottom">
             <div id="left-side"></div>
             <div id="right-side">
+                <div class="section" id="about">
+                    <p>I recently completed my studies in <b>game design</b> at Illinois State University, where I refined my skills in graphic design. While I've found joy in my graphic design journey, I've developed a newfound passion for <b>web design</b>. I'm excited to leverage my skills to craft engaging websites that make a lasting impact.</p>
+                    <br>
+                    <a id="link" href="Resume.pdf" target="_blank"><h3>View Full Resume 🡢</h3></a>
+                </div>
                 <div class="section projects" id="projects">
-                    <!-- Projects Generate Here -->
+                    <script>
+                        fetch('assets/data/projects.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                const projectsDiv = document.getElementById('projects');
+                                data.forEach(project => {
+                                    const projectTile = document.createElement('div');
+                                    projectTile.classList.add('project-tile');
+                    
+                                    const projectPreview = document.createElement('div');
+                                    projectPreview.classList.add('project-preview');
+                                    const previewImg = document.createElement('img');
+                                    previewImg.src = project.file;
+                                    projectPreview.appendChild(previewImg);
+                    
+                                    const projectDetails = document.createElement('div');
+                                    projectDetails.classList.add('project-details');
+                                    const title = document.createElement('h3');
+                                    title.innerText = project.title;
+                                    const shortDesc = document.createElement('p');
+                                    shortDesc.innerText = project['short-desc'];
+                                    const softwareUsed = document.createElement('div');
+                                    softwareUsed.classList.add('software-used');
+                                    project.software.forEach(software => {
+                                        const bubble = document.createElement('span');
+                                        bubble.classList.add('bubble');
+                                        bubble.innerText = software;
+                                        softwareUsed.appendChild(bubble);
+                                    });
+                                    projectDetails.appendChild(title);
+                                    projectDetails.appendChild(shortDesc);
+                                    projectDetails.appendChild(softwareUsed);
+                    
+                                    projectTile.appendChild(projectPreview);
+                                    projectTile.appendChild(projectDetails);
+                    
+                                    projectsDiv.appendChild(projectTile);
+                                });
+                            })
+                            .catch(error => console.error('Error fetching data:', error));
+                    </script>
                     <a id="link" href="projects.html"><h3>View All Projects 🡢</h3></a>
+                    <div class="section" id="contact">
+                        <h2>Contact</h2>
+                        <form 
+                        name="contact"
+                        action="success.html"
+                        method="POST"
+                        autocomplete="off"
+                        data-netlify="true"
+                        >
+                        <input type="text" id="name" name="name" placeholder="Name" required>
+    
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+    
+                        <textarea id="message" name="message" rows="7" placeholder="Message" required></textarea>
+    
+                        <button class="btn" type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <script src="assets/js/projects.js"></script>
     <script src="assets/js/scroll.js"></script>
     <script src="assets/js/hover.js"></script>
     <script src="assets/js/labels.js"></script>
