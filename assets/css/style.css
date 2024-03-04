@@ -279,9 +279,8 @@ p {
 }
 /* Contact Form */
 #contact {
-	height: calc(100vh - 120px);
+	height: calc(100vh - 80px);
 	padding: 10px 15px;
-	margin-bottom: 70px;
 }
 form {
 	display: flex;
