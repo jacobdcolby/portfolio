@@ -20,49 +20,50 @@
         <div class="project-list"></div>
     </div>
 </body>
-<script>fetch('projects.json')
-    .then(response => response.json())
-    .then(data => {
-        const projectList = document.querySelector('.project-list');
-        data.forEach(project => {
-            const projectItem = document.createElement('a');
-            projectItem.classList.add('project-item');
-            projectItem.href = `${project.file}.html`; // Assuming 'file' in the JSON corresponds to the project page
+<script>
+    fetch('projects.json')
+        .then(response => response.json())
+        .then(data => {
+            const projectList = document.querySelector('.project-list');
+            data.forEach(project => {
+                const projectItem = document.createElement('a');
+                projectItem.classList.add('project-item');
+                projectItem.href = `${project.file}.html`; // Assuming 'file' in the JSON corresponds to the project page
 
-            const projectImg = document.createElement('div');
-            projectImg.classList.add('project-img');
-            const imgContainer = document.createElement('div');
-            imgContainer.classList.add('img-container');
-            const img = document.createElement('img');
-            img.src = project.preview;
-            imgContainer.appendChild(img);
-            projectImg.appendChild(imgContainer);
+                const projectImg = document.createElement('div');
+                projectImg.classList.add('project-img');
+                const imgContainer = document.createElement('div');
+                imgContainer.classList.add('img-container');
+                const img = document.createElement('img');
+                img.src = project.preview;
+                imgContainer.appendChild(img);
+                projectImg.appendChild(imgContainer);
 
-            const projectName = document.createElement('div');
-            projectName.classList.add('project-name');
-            projectName.innerHTML = `${project.title} <span class="redirect">🡥</span>`;
+                const projectName = document.createElement('div');
+                projectName.classList.add('project-name');
+                projectName.innerHTML = `${project.title} <span class="redirect">🡥</span>`;
 
-            const softwareUsed = document.createElement('div');
-            softwareUsed.classList.add('software-used');
-            project.software.forEach(software => {
-                const bubble = document.createElement('span');
-                bubble.classList.add('bubble');
-                bubble.innerText = software;
-                softwareUsed.appendChild(bubble);
+                const softwareUsed = document.createElement('div');
+                softwareUsed.classList.add('software-used');
+                project.software.forEach(software => {
+                    const bubble = document.createElement('span');
+                    bubble.classList.add('bubble');
+                    bubble.innerText = software;
+                    softwareUsed.appendChild(bubble);
+                });
+
+                const projectDate = document.createElement('div');
+                projectDate.classList.add('project-date');
+                projectDate.innerText = project.year;
+
+                projectItem.appendChild(projectImg);
+                projectItem.appendChild(projectName);
+                projectItem.appendChild(softwareUsed);
+                projectItem.appendChild(projectDate);
+
+                projectList.appendChild(projectItem);
             });
-
-            const projectDate = document.createElement('div');
-            projectDate.classList.add('project-date');
-            projectDate.innerText = project.year;
-
-            projectItem.appendChild(projectImg);
-            projectItem.appendChild(projectName);
-            projectItem.appendChild(softwareUsed);
-            projectItem.appendChild(projectDate);
-
-            projectList.appendChild(projectItem);
-        });
-    })
+        })
     .catch(error => console.error('Error fetching data:', error));
 </script>
 </html>
