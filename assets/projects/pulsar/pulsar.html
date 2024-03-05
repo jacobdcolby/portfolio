@@ -33,9 +33,9 @@
             .then(data => {
                 const project = data.find(item => item.file === filename); // Find the project data based on the filename
                 if (project) {
-                    document.getElementById('project-title').innerText = project.title;
-                    document.getElementById('project-short-desc').innerText = project.short-desc;
-                    const softwareUsed = document.getElementById('project-software');
+                    document.getElementById('title').innerText = project.title;
+                    document.getElementById('short-desc').innerText = project.short-desc;
+                    const softwareUsed = document.getElementById('software');
                     project.software.forEach(software => {
                         const bubble = document.createElement('span');
                         bubble.classList.add('bubble');
