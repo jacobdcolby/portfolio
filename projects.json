@@ -8,11 +8,11 @@
         "software": ["Photoshop", "HTML", "CSS"],
         "year": "2023",
         "gallery": [
-            "assets/projects/pulsar/1.png",
-            "assets/projects/pulsar/2.png",
-            "assets/projects/pulsar/3.png",
-            "assets/projects/pulsar/4.png",
-            "assets/projects/pulsar/5.png"
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png"
         ]
     },
     {
@@ -24,14 +24,14 @@
         "software": ["Photoshop"],
         "year": "2023",
         "gallery": [
-            "assets/projects/vct2023/1.png",
-            "assets/projects/vct2023/2.png",
-            "assets/projects/vct2023/3.png",
-            "assets/projects/vct2023/4.png",
-            "assets/projects/vct2023/5.png",
-            "assets/projects/vct2023/6.png",
-            "assets/projects/vct2023/7.png",
-        "assets/projects/vct2023/8.png"
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png"
             
         ]
     },
@@ -44,11 +44,11 @@
         "software": ["Procreate"],
         "year": "2023",
         "gallery": [
-            "assets/projects/quad-level/1.JPG",
-            "assets/projects/quad-level/2.JPG",
-            "assets/projects/quad-level/3.JPG",
-            "assets/projects/quad-level/4.JPG",
-            "assets/projects/quad-level/5.JPG"
+            "1.JPG",
+            "2.JPG",
+            "3.JPG",
+            "4.JPG",
+            "5.JPG"
         ]
     },
     {
@@ -60,14 +60,14 @@
         "software": ["Valve Editor"],
         "year": "2023",
         "gallery": [
-            "assets/projects/poral-level/1.png",
-            "assets/projects/poral-level/2.png",
-            "assets/projects/poral-level/3.png",
-            "assets/projects/poral-level/4.png",
-            "assets/projects/poral-level/5.png",
-            "assets/projects/poral-level/6.png",
-            "assets/projects/poral-level/7.png",
-            "assets/projects/poral-level/8.png"
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png",
+            "6.png",
+            "7.png",
+            "8.png"
         ]
     }
 ]
