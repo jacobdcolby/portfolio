@@ -17,7 +17,7 @@
         <a id="link" href="index.html"><h3 class="back-button">🡠 Jacob Colby</h3></a>
         <div class="project-info section">
             <h1 id="project-title"></h1>
-            <h3 class="subtitle" id="project-short-desc"></h3>
+            <h3 class="subtitle" id="project-long-desc"></h3>
             <div class="bubbles" id="project-software"></div>
         </div>
         <div class="gallery section" id="gallery"></div>
@@ -34,7 +34,7 @@
                 const project = data.find(item => item.file === filename); // Find the project data based on the filename
                 if (project) {
                 document.getElementById('project-title').innerText = project.title;
-                document.getElementById('project-short-desc').innerText = project['short-desc'];
+                document.getElementById('project-long-desc').innerText = project['long-desc'];
                 const softwareUsed = document.getElementById('project-software');
                 project.software.forEach(software => {
                     const bubble = document.createElement('span');
