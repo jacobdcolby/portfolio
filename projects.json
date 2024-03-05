@@ -6,7 +6,14 @@
         "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
         "long-desc": "",
         "software": ["Photoshop", "HTML", "CSS"],
-        "year": "2023"
+        "year": "2023",
+        "gallery": [
+            "assets/projects/pulsar/1.png",
+            "assets/projects/pulsar/2.png",
+            "assets/projects/pulsar/3.png",
+            "assets/projects/pulsar/4.png",
+            "assets/projects/pulsar/5.png"
+        ]
     },
     {
         "file": "vct2023",
@@ -15,7 +22,18 @@
         "short-desc": "Created graphics for upcoming and finished matches in Valorant's 2023 Championship Tour using Photoshop.",
         "long-desc": "",
         "software": ["Photoshop"],
-        "year": "2023"
+        "year": "2023",
+        "gallery": [
+            "assets/projects/vct2023/1.png",
+            "assets/projects/vct2023/2.png",
+            "assets/projects/vct2023/3.png",
+            "assets/projects/vct2023/4.png",
+            "assets/projects/vct2023/5.png",
+            "assets/projects/vct2023/6.png",
+            "assets/projects/vct2023/7.png",
+        "assets/projects/vct2023/8.png"
+            
+        ]
     },
     {
         "file": "quad-level",
@@ -24,7 +42,14 @@
         "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
         "long-desc": "",
         "software": ["Procreate"],
-        "year": "2023"
+        "year": "2023",
+        "gallery": [
+            "assets/projects/quad-level/1.JPG",
+            "assets/projects/quad-level/2.JPG",
+            "assets/projects/quad-level/3.JPG",
+            "assets/projects/quad-level/4.JPG",
+            "assets/projects/quad-level/5.JPG"
+        ]
     },
     {
         "file": "portal-level",
@@ -33,6 +58,16 @@
         "short-desc": "Created a playable level within Portal 2 that features an innovative use of portal mechanics, while offering players a challenging and engaging puzzle within the game.",
         "long-desc": "",
         "software": ["Valve Editor"],
-        "year": "2023"
+        "year": "2023",
+        "gallery": [
+            "assets/projects/poral-level/1.png",
+            "assets/projects/poral-level/2.png",
+            "assets/projects/poral-level/3.png",
+            "assets/projects/poral-level/4.png",
+            "assets/projects/poral-level/5.png",
+            "assets/projects/poral-level/6.png",
+            "assets/projects/poral-level/7.png",
+            "assets/projects/poral-level/8.png"
+        ]
     }
 ]
