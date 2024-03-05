@@ -201,7 +201,6 @@ p {
 .projects {
 	display: grid;
 	grid-gap: 40px;
-	padding-bottom: 60px;
 }
 .projects a {
 	text-decoration: none;
@@ -279,8 +278,9 @@ p {
 }
 /* Contact Form */
 #contact {
-	height: calc(100vh - 90px);
+	height: calc(100vh - 80px);
 	padding: 10px 15px;
+	margin-top: 80px;
 }
 form {
 	display: flex;
