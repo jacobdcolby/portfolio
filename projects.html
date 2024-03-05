@@ -17,57 +17,52 @@
         <a id="link" href="index.html"><h3 class="back-button">🡠 Jacob Colby</h3></a>
         <h1>All Projects</h1>
         <br>
-        <div class="project-list">
-            <div class="project-titles">
-                <div class="header-img">Image</div>
-                <div class="header-title">Project</div>
-                <div class="header-software-used">Built With</div>
-                <div class="header-date">Year</div>
-            </div>
-            <a class="project-item" href="projectTemplate.html">
-                <div class="project-img">
-                    <div class="img-container"><img src="assets/projects/pulsar/1.png"></div>
-                </div>
-                <div class="project-name">Pulsar Gaming Mouse Product Page <span class="redirect">🡥</span></div>
-                <div class="software-used">
-                    <span class="bubble">Photoshop</span>
-                    <span class="bubble">HTML</span>
-                    <span class="bubble">CSS</span>
-                </div>
-                <div class="project-date">2023</div>
-            </a>
-            <a class="project-item" href="#">
-                <div class="project-img">
-                    <div class="img-container"><img src="assets/projects/vct2023/1.png"></div>
-                </div>
-                <div class="project-name">Valorant Champions Tour 2023 Graphics <span class="redirect">🡥</span></div>
-                <div class="software-used">
-                    <span class="bubble">Photoshop</span>
-                </div>
-                <div class="project-date">2023</div>
-            </a>
-            <a class="project-item" href="#">
-                <div class="project-img">
-                    <div class="img-container"><img src="assets/projects/quad-level/1.JPG"></div>
-                </div>
-                <div class="project-name">Isometric Level of Illinois State's Quad <span class="redirect">🡥</span></div>
-                <div class="software-used">
-                    <span class="bubble">Procreate</span>
-                </div>
-                <div class="project-date">2023</div>
-            </a>
-            <a class="project-item" href="#">
-                <div class="project-img">
-                    <div class="img-container"><img src="assets/projects/portal-level/1.png"></div>
-                </div>
-                <div class="project-name">Portal 2 Level Design <span class="redirect">🡥</span></div>
-                <div class="software-used">
-                    <span class="bubble">Valve Editor</span>
-                </div>
-                <div class="project-date">2023</div>
-            </a>
-        </div>
+        <div class="project-list"></div>
     </div>
 </body>
+<script>fetch('projects.json')
+    .then(response => response.json())
+    .then(data => {
+        const projectList = document.querySelector('.project-list');
+        data.forEach(project => {
+            const projectItem = document.createElement('a');
+            projectItem.classList.add('project-item');
+            projectItem.href = `${project.file}.html`; // Assuming 'file' in the JSON corresponds to the project page
 
+            const projectImg = document.createElement('div');
+            projectImg.classList.add('project-img');
+            const imgContainer = document.createElement('div');
+            imgContainer.classList.add('img-container');
+            const img = document.createElement('img');
+            img.src = project.preview;
+            imgContainer.appendChild(img);
+            projectImg.appendChild(imgContainer);
+
+            const projectName = document.createElement('div');
+            projectName.classList.add('project-name');
+            projectName.innerHTML = `${project.title} <span class="redirect">🡥</span>`;
+
+            const softwareUsed = document.createElement('div');
+            softwareUsed.classList.add('software-used');
+            project.software.forEach(software => {
+                const bubble = document.createElement('span');
+                bubble.classList.add('bubble');
+                bubble.innerText = software;
+                softwareUsed.appendChild(bubble);
+            });
+
+            const projectDate = document.createElement('div');
+            projectDate.classList.add('project-date');
+            projectDate.innerText = project.year;
+
+            projectItem.appendChild(projectImg);
+            projectItem.appendChild(projectName);
+            projectItem.appendChild(softwareUsed);
+            projectItem.appendChild(projectDate);
+
+            projectList.appendChild(projectItem);
+        });
+    })
+    .catch(error => console.error('Error fetching data:', error));
+</script>
 </html>
