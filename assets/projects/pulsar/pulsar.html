@@ -28,7 +28,7 @@
 
     <script>
         const filename = window.location.pathname.split('/').pop().split('.')[0]; // Get the current HTML file name
-        fetch('projects.json')
+        fetch('../../../projects.json')
             .then(response => response.json())
             .then(data => {
                 const project = data.find(item => item.file === filename); // Find the project data based on the filename
