@@ -1,5 +1,6 @@
 // Get the project name from the URL
 const projectName = window.location.pathname.split('/').pop().split('.')[0];
+console.log(window.location.pathname);
 
 // Fetch the project data
 fetch('../../projects.json')
