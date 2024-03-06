@@ -2,4 +2,4 @@
 /:filename.html /:filename 200
 
 # Convert project URLs.
-/assets/projects/:project/:project.html /projects/:project 200
+/projects/:project /assets/projects/:project/:project.html 200
