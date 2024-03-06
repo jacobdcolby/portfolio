@@ -29,7 +29,7 @@
             data.forEach(project => {
                 const projectItem = document.createElement('a');
                 projectItem.classList.add('project-item');
-                projectItem.href = 'assets/projects/${project.file}/${project.file}.html';
+                projectItem.href = `assets/projects/${project.file}/${project.file}.html`;
                 console.log($project.file);
 
                 const projectImg = document.createElement('div');
