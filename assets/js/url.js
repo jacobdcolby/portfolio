@@ -2,7 +2,7 @@
 const projectName = window.location.pathname.split('/').pop().split('.')[0];
 
 // Fetch the project data
-fetch('../../../projects.json')
+fetch('../../projects.json')
     .then(response => response.json())
     .then(data => {
         const project = data.find(item => item.file === projectName); // Find the project data based on the project name
