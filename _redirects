@@ -1,2 +1,5 @@
-/* /:splat.html 200
-/assets/projects/* /*/:splat 200
+# Remove .html extension from root files.
+/:filename.html /:filename 200
+
+# Convert project URLs.
+/assets/projects/:project/:project.html /projects/:project 200
