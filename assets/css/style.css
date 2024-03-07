@@ -21,6 +21,9 @@
 	font-family: 'bluu';
 	src: url('../fonts/bluu/bluunext-bold.ttf');
 }
+html {
+	background-color: #000;
+}
 body {
 	margin: 0;
 	font-family: WorkSans, sans-serif;
@@ -282,7 +285,7 @@ p {
 }
 /* Contact Form */
 #contact {
-	height: calc(100vh - 80px);
+	height: calc(100vh - 120px);
 	padding: 10px 15px;
 	margin-top: 80px;
 }
