@@ -52,7 +52,7 @@ body::-webkit-scrollbar {
 }
 .top {
 	display: flex;
-	width: 30%;
+	width: 40%;
 	height: 86vh;
 	overflow-x: hidden;
 	position: fixed;
@@ -125,8 +125,9 @@ body::-webkit-scrollbar {
 }
 /* Type Settings */
 h1 {
-	font-family: bluu;
 	font-size: 50px;
+	font-weight: 550;
+	letter-spacing: -1px;
 }
 h2 {
 	font-size: 20px;
@@ -292,7 +293,6 @@ form {
 	margin: 20px 0;
 	padding: 0;
 	width: 100%;
-	max-width: 500px;
 }
 input[type="text"],input[type="email"],textarea {
 	background-color: var(--element-bg);
@@ -357,6 +357,7 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,textarea::place
 		width: 100%;
 		height: auto;
 		padding: 0 15px;
+		margin: 10% 10% 5% 10%;
 	}
 	#left-side {
 		flex: 0%;
@@ -386,7 +387,7 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,textarea::place
 		padding: 10px;
 	}
 	.top {
-		margin: 5%;
+		margin: 10% 5% 5% 5%;
 	}
 	.bottom {
 		padding: 5% 5% 0 5%;
