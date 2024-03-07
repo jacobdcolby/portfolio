@@ -36,22 +36,6 @@
         ]
     },
     {
-        "file": "quad-level",
-        "preview": "assets/projects/quad-level/1.JPG",
-        "title": "Isometric Level of Illinois State's Quad",
-        "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
-        "long-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game. Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game. Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
-        "software": ["Procreate"],
-        "year": "2023",
-        "gallery": [
-            "1.JPG",
-            "2.JPG",
-            "3.JPG",
-            "4.JPG",
-            "5.JPG"
-        ]
-    },
-    {
         "file": "portal-level",
         "preview": "assets/projects/portal-level/1.png",
         "title": "Portal 2 Level Design",
@@ -68,6 +52,22 @@
             "6.png",
             "7.png",
             "8.png"
+        ]
+    },
+    {
+        "file": "quad-level",
+        "preview": "assets/projects/quad-level/1.JPG",
+        "title": "Isometric Level of Illinois State's Quad",
+        "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
+        "long-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game. Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game. Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
+        "software": ["Procreate"],
+        "year": "2023",
+        "gallery": [
+            "1.JPG",
+            "2.JPG",
+            "3.JPG",
+            "4.JPG",
+            "5.JPG"
         ]
     }
 ]
