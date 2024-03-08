@@ -55,7 +55,7 @@ body::-webkit-scrollbar {
 }
 .top {
 	display: flex;
-	width: 40%;
+	width: 30%;
 	height: 86vh;
 	overflow-x: hidden;
 	position: fixed;
