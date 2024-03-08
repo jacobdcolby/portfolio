@@ -356,7 +356,7 @@ input[type="text"]::placeholder,input[type="email"]::placeholder,textarea::place
 	}
 	.top {
 		position: relative;
-		width: 100%;
+		width: 80%;
 		height: auto;
 		padding: 0 15px;
 		margin: 10% 10% 5% 10%;
