@@ -1,11 +1,12 @@
 [
     {
         "file": "pulsar",
+        "link": "https://jacobdcolby.github.io/pulsar/",
         "preview": "assets/projects/pulsar/1.png",
         "title": "Pulsar Product Page",
         "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
         "long-desc": "This project involved designing a sample web page to showcase Pulsar's X2 Wireless gaming mouse. The page features detailed product images and highlights key features of the mouse, such as its wireless technology, ultra-lightweight design, and ergonomic shape. The goal was to create a visually appealing and informative layout that effectively promotes the product to potential customers.",
-        "software": ["Photoshop", "HTML", "CSS"],
+        "software": ["HTML", "CSS", "JavaScript", "Photoshop"],
         "year": "2023",
         "gallery": [
             "1.png",
@@ -17,6 +18,7 @@
     },
     {
         "file": "vct2023",
+        "link": "null",
         "preview": "assets/projects/vct2023/1.png",
         "title": "Valorant Champions Tour 2023 Graphics",
         "short-desc": "Created graphics for upcoming and finished matches in Valorant's 2023 Championship Tour using Photoshop.",
@@ -37,6 +39,7 @@
     },
     {
         "file": "portal-level",
+        "link": "null",
         "preview": "assets/projects/portal-level/1.png",
         "title": "Portal 2 Level Design",
         "short-desc": "Created a playable level within Portal 2 that features an innovative use of portal mechanics, while offering players a challenging and engaging puzzle within the game.",
@@ -56,6 +59,7 @@
     },
     {
         "file": "quad-level",
+        "link": "null",
         "preview": "assets/projects/quad-level/1.JPG",
         "title": "Isometric Level of Illinois State's Quad",
         "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
