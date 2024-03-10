@@ -48,18 +48,22 @@
                                 const projectsDiv = document.getElementById('projects');
                                 data.forEach(project => {
                                     const projectTileLink = document.createElement('a');
-                                    projectTileLink.href = `projects/${project.file}`;
+                                    if (project.link && project.link !== "null") {
+                                        projectTileLink.href = project.link;
+                                    } else {
+                                        projectTileLink.href = `projects/${project.file}`;
+                                    }
                                     projectTileLink.classList.add('project-tile-link');
-                    
+
                                     const projectTile = document.createElement('div');
                                     projectTile.classList.add('project-tile');
-                    
+
                                     const projectPreview = document.createElement('div');
                                     projectPreview.classList.add('project-preview');
                                     const previewImg = document.createElement('img');
                                     previewImg.src = project.preview;
                                     projectPreview.appendChild(previewImg);
-                    
+
                                     const projectDetails = document.createElement('div');
                                     projectDetails.classList.add('project-details');
                                     const title = document.createElement('h3');
@@ -77,14 +81,14 @@
                                     projectDetails.appendChild(title);
                                     projectDetails.appendChild(shortDesc);
                                     projectDetails.appendChild(softwareUsed);
-                    
+
                                     projectTile.appendChild(projectPreview);
                                     projectTile.appendChild(projectDetails);
                                     projectTileLink.appendChild(projectTile);
-                    
+
                                     projectsDiv.appendChild(projectTileLink);
                                 });
-                    
+
                                 const viewAllProjectsLink = document.createElement('a');
                                 viewAllProjectsLink.id = 'link';
                                 viewAllProjectsLink.href = 'projects';
