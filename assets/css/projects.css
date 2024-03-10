@@ -126,8 +126,6 @@ body {
     text-overflow: ellipsis;
 }
 
-
-/* Image Container */
 .img-container {
     width: 100%;
     height: 100%;
@@ -173,6 +171,11 @@ body {
 
 .redirect {
     display: none;
+}
+
+/* Gallery Page */
+.project-title {
+    margin-bottom: 20px;
 }
 
 .gallery {
