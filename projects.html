@@ -29,9 +29,11 @@
             data.forEach(project => {
                 const projectItem = document.createElement('a');
                 projectItem.classList.add('project-item');
-                projectItem.href = project.link && project.link !== "null" ? project.link : `projects/${project.file}`;
-                projectItem.target = "_blank"; // Open link in new tab
-                console.log(project.file);
+                projectItem.href = `projects/${project.file}`;
+
+                if (project.link && project.link !== 'null') {
+                    projectItem.target = '_blank';
+                }
 
                 const projectImg = document.createElement('div');
                 projectImg.classList.add('project-img');
