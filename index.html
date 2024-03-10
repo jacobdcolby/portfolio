@@ -53,7 +53,11 @@
                                     } else {
                                         projectTileLink.href = `projects/${project.file}`;
                                     }
-                                    projectTileLink.target = "_blank"; // Open link in new tab
+                                    
+                                    if (project.link && project.link !== 'null') {
+                                        projectTileLink.target = '_blank';
+                                    }
+                                    
                                     projectTileLink.classList.add('project-tile-link');
 
                                     const projectTile = document.createElement('div');

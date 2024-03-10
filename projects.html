@@ -29,7 +29,7 @@
             data.forEach(project => {
                 const projectItem = document.createElement('a');
                 projectItem.classList.add('project-item');
-                projectItem.href = `projects/${project.file}`;
+                projectItem.href = project.link && project.link !== "null" ? project.link : `projects/${project.file}`
 
                 if (project.link && project.link !== 'null') {
                     projectItem.target = '_blank';
