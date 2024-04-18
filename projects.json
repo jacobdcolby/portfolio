@@ -7,7 +7,7 @@
         "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
         "long-desc": "This project involved designing a sample web page to showcase Pulsar's X2 Wireless gaming mouse. The page features detailed product images and highlights key features of the mouse, such as its wireless technology, ultra-lightweight design, and ergonomic shape. The goal was to create a visually appealing and informative layout that effectively promotes the product to potential customers.",
         "software": ["HTML", "CSS", "JavaScript", "Photoshop"],
-        "year": "2023",
+        "year": "2024",
         "gallery": [
             "1.png",
             "2.png",
@@ -38,6 +38,21 @@
         ]
     },
     {
+        "file": "logos",
+        "link": "null",
+        "preview": "assets/projects/logos/1.png",
+        "title": "Logo Design",
+        "short-desc": "A collection of sleek and modern logos designed for personal and company branding.",
+        "long-desc": "This project collection features a series of sleek and modern logos designed for personal and company branding. Each logo represents a unique identity built to reflect the brand of the client.",
+        "software": ["Illustrator"],
+        "year": "2023",
+        "gallery": [
+            "1.png",
+            "2.png",
+            "3.png"
+        ]
+    },
+    {
         "file": "portal-level",
         "link": "null",
         "preview": "assets/projects/portal-level/1.png",
@@ -65,7 +80,7 @@
         "short-desc": "Created an isometric level design using the unique paths and angles of Illinois State's Quad, emphasizing its layout in a detailed and visually appealing style suitable for a virtual game.",
         "long-desc": "This project involved creating an isometric level design of Illinois State University's Quad, emphasizing its unique paths and angles in a detailed and visually appealing style. The design was created with the intention of being suitable for a virtual game, showcasing the campus layout in an interactive and engaging way. The goal was to capture the essence of the Quad's design while adding a creative twist for a virtual environment.",
         "software": ["Procreate"],
-        "year": "2023",
+        "year": "2022",
         "gallery": [
             "1.JPG",
             "2.JPG",
