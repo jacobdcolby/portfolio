@@ -1,5 +1,18 @@
 [
     {
+        "file": "nike",
+        "link": "null",
+        "preview": "assets/projects/nike/ja2preview.png",
+        "title": "Nike Newsletter - Ja Morant 2",
+        "short-desc": "Created a dynamic newsletter highlighting the key features and inspiration behind Nike's Ja 2 basketball shoe.",
+        "long-desc": "Crafted an engaging newsletter to introduce Nike's new Ja 2 basketball shoe, bringing to life its key features and the inspiration behind its design. The project involved transforming detailed product information into concise, reader-friendly highlights that showcase both the shoe's performance benefits and its connection to NBA star Ja Morant's dynamic style.",
+        "software": ["Photoshop"],
+        "year": "2024",
+        "gallery": [
+            "nike-newsletter.png"
+        ]
+    },
+    {
         "file": "pulsar",
         "link": "https://jacobdcolby.github.io/pulsar/",
         "preview": "assets/projects/pulsar/1.png",
