@@ -1,32 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#12203b">
-    <title>Jacob Colby</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/projects.css">
-    <script src="https://kit.fontawesome.com/4d70725f49.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
-</head>
-
 <body>
     <div class="projects-container">
-        <a id="link" href="../../../projects.html"><h3 class="back-button"><span class="unicode">&#8592;</span> All Projects</h3></a>
+        <a href="/projects" id="link"><h3 class="back-button"><span class="unicode">←</span> All Projects</h3></a>
         <div class="project-info section">
-            <h1 id="project-title"></h1>
-            <div class="bubbles" id="project-software"></div>
+            <h1 id="project-title">Nike Newsletter - Ja Morant 2</h1>
+            <div class="bubbles" id="project-software"><span class="bubble">Photoshop</span></div>
             <div class="gallery-text">
-                <h3 class="subtitle" id="project-long-desc"></h3>
+                <h3 class="subtitle" id="project-long-desc">Crafted an engaging newsletter to introduce Nike's new Ja 2 basketball shoe, bringing to life its key features and the inspiration behind its design. The project involved transforming detailed product information into concise, reader-friendly highlights that showcase both the shoe's performance benefits and its connection to NBA star Ja Morant's dynamic style.</h3>
             </div>
         </div>
-        <div class="gallery section" id="gallery"></div>
-        <div class="more-projects">
-            <a id="link" href="../../../projects.html">More Projects <span class="unicode">&#8594;</span></a>
+
+        <!-- Gallery section with fullscreen functionality -->
+        <div class="gallery section" id="gallery">
+            <img src="/assets/projects/nike/nike-newsletter.png" class="clickable-image" onclick="openFullscreen(this)">
         </div>
+
+        <div class="more-projects">
+            <a href="/projects" id="link">More Projects <span class="unicode">→</span></a>
+        </div>
+    </div>
+
+    <!-- Fullscreen Overlay for image preview (ADDED) -->
+    <div id="fullscreenOverlay" class="fullscreen-overlay">
+        <span class="close" onclick="closeFullscreen()">&times;</span>
+        <img class="fullscreen-content" id="fullscreenImage">
     </div>
 
     <script>
@@ -50,6 +46,8 @@
                         project.gallery.forEach(imgSrc => {
                             const img = document.createElement('img');
                             img.src = `/assets/projects/${project.file}/${imgSrc}`;
+                            img.classList.add('clickable-image');
+                            img.setAttribute('onclick', 'openFullscreen(this)'); // Added to make gallery images clickable for fullscreen
                             gallery.appendChild(img);
                         });
                     }
@@ -58,7 +56,20 @@
                 }
             })
             .catch(error => console.error('Error fetching data:', error));
+
+        // Fullscreen JavaScript functions
+        function openFullscreen(img) {
+            var fullscreenOverlay = document.getElementById("fullscreenOverlay");
+            var fullscreenImage = document.getElementById("fullscreenImage");
+
+            fullscreenOverlay.style.display = "flex"; // Show the overlay
+            fullscreenImage.src = img.src; // Use the clicked image's source
+        }
+
+        function closeFullscreen() {
+            var fullscreenOverlay = document.getElementById("fullscreenOverlay");
+            fullscreenOverlay.style.display = "none"; // Hide the overlay
+        }
     </script>
 </body>
-
 </html>
