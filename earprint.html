@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Colby</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/projects.css">
+    <script src="https://kit.fontawesome.com/4d70725f49.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <div class="projects-container">
+        <a id="link" href="../../../projects.html"><h3 class="back-button"><span class="unicode">&#8592;</span> All Projects</h3></a>
+        <div class="project-info section">
+            <h1 id="project-title"></h1>
+            <div class="bubbles" id="project-software"></div>
+            <div class="gallery-text">
+                <h3 class="subtitle" id="project-long-desc"></h3>
+            </div>
+        </div>
+        <div class="gallery section" id="gallery"></div>
+        <div class="more-projects">
+            <a id="link" href="../../../projects.html">More Projects &#8594;</a>
+        </div>
+    </div>
+
+    <script>
+        const filename = window.location.pathname.split('/').pop().split('.')[0]; // Get the current HTML file name
+        fetch('../../../projects.json')
+            .then(response => response.json())
+            .then(data => {
+                const project = data.find(item => item.file === filename); // Find the project data based on the filename
+                if (project) {
+                    document.getElementById('project-title').innerText = project.title;
+                    document.getElementById('project-long-desc').innerText = project['long-desc'];
+                    const softwareUsed = document.getElementById('project-software');
+                    project.software.forEach(software => {
+                        const bubble = document.createElement('span');
+                        bubble.classList.add('bubble');
+                        bubble.innerText = software;
+                        softwareUsed.appendChild(bubble);
+                    });
+                    if (project.gallery) {
+                        const gallery = document.getElementById('gallery');
+                        project.gallery.forEach(imgSrc => {
+                            const img = document.createElement('img');
+                            img.src = `/assets/projects/${project.file}/${imgSrc}`;
+                            gallery.appendChild(img);
+                        });
+                    }
+                } else {
+                    console.error('Project not found:', filename);
+                }
+            })
+            .catch(error => console.error('Error fetching data:', error));
+    </script>
+</body>
+
+</html>

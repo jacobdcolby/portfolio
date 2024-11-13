@@ -1,5 +1,18 @@
 [
     {
+        "file": "earprint",
+        "link": "https://www.figma.com/proto/7yNTcjnZhiFmfPfOIvZfAS/Earprint?node-id=17-1152&node-type=canvas&t=sHIkavqAAQSPT4Z7-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+        "preview": "assets/projects/earprint/Mockup.png",
+        "title": "Earprint - Music App UI Design",
+        "short-desc": "A user interface design for a social media music app that combines music sharing with interactive connectivity features.",
+        "long-desc": "This project showcases a user interface for a music app where users can share what they're listening to and connect with others, similar to social media platforms. The design includes a 'currently listening' section and a 'listen along' option, enhancing the experience by blending music sharing with social interaction.",
+        "software": ["Figma"],
+        "year": "2024",
+        "gallery": [
+            "Mockup.png"
+        ]
+    },
+    {
         "file": "nike",
         "link": "null",
         "preview": "assets/projects/nike/ja2preview.png",
