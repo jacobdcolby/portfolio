@@ -1,5 +1,22 @@
 [
     {
+        "file": "pulsar",
+        "link": "https://jacobdcolby.github.io/pulsar/",
+        "preview": "assets/projects/pulsar/1.png",
+        "title": "Pulsar Product Page",
+        "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
+        "long-desc": "This project involved designing a sample web page to showcase Pulsar's X2 Wireless gaming mouse. The page features detailed product images and highlights key features of the mouse, such as its wireless technology, ultra-lightweight design, and ergonomic shape. The goal was to create a visually appealing and informative layout that effectively promotes the product to potential customers.",
+        "software": ["HTML", "CSS", "JavaScript", "Photoshop"],
+        "year": "2024",
+        "gallery": [
+            "1.png",
+            "2.png",
+            "3.png",
+            "4.png",
+            "5.png"
+        ]
+    },
+    {
         "file": "earprint",
         "link": "https://www.figma.com/proto/7yNTcjnZhiFmfPfOIvZfAS/Earprint?node-id=17-1152&node-type=canvas&t=sHIkavqAAQSPT4Z7-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
         "preview": "assets/projects/earprint/Mockup.png",
@@ -23,23 +40,6 @@
         "year": "2024",
         "gallery": [
             "nike-newsletter.png"
-        ]
-    },
-    {
-        "file": "pulsar",
-        "link": "https://jacobdcolby.github.io/pulsar/",
-        "preview": "assets/projects/pulsar/1.png",
-        "title": "Pulsar Product Page",
-        "short-desc": "A sample web page showcasing Pulsar's X2 Wireless gaming mouse, featuring detailed product images and key features.",
-        "long-desc": "This project involved designing a sample web page to showcase Pulsar's X2 Wireless gaming mouse. The page features detailed product images and highlights key features of the mouse, such as its wireless technology, ultra-lightweight design, and ergonomic shape. The goal was to create a visually appealing and informative layout that effectively promotes the product to potential customers.",
-        "software": ["HTML", "CSS", "JavaScript", "Photoshop"],
-        "year": "2024",
-        "gallery": [
-            "1.png",
-            "2.png",
-            "3.png",
-            "4.png",
-            "5.png"
         ]
     },
     {
